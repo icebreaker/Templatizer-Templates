@@ -5,7 +5,7 @@ This repository contains general-purpose templates comestible by [Templatizer](h
 Getting Started
 ---------------
 
-This short `guide` will help you get started with %NAME% in no time.
+This short `guide` will help you get started with Templatizer Templates in no time.
 
 ### Install
 
