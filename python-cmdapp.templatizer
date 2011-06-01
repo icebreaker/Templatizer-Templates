@@ -1,0 +1,39 @@
+{ 
+	"name": "python-cmdapp",
+	"actions":
+	[	
+		["LICENSE","python-cmdapp/LICENSE-%LICENSE%"],
+		["tests.py","python-cmdapp/tests.py"],
+		["setup.py","python-cmdapp/setup.py"],
+		["README.md","python-cmdapp/README.md"],
+		["%FILENAME%","python-cmdapp/app.py"],
+		["mkdir bin"],
+		["bin/%FILENAME%","python-cmdapp/bin/app"]
+	],
+	"arguments":
+	{
+		"author":
+		{
+			"%AUTHOR%":"v"
+		},
+		"description":
+		{
+			"%DESCRIPTION%":"v",
+			"%DESCRIPTION-README%":"v[0].lower() + v[1:]"
+		},
+		"license":
+		{
+			"%LICENSE%":"v.upper()"
+		},
+		"name":
+		{
+			"%NAME%":"v",
+			"%FILENAME%":"v.lower()"
+		},
+		"github":
+		{
+			"%GITHUB%":"v"
+		}
+	},
+	"constants": {}
+}
