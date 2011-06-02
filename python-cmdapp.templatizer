@@ -8,7 +8,8 @@
 		["README.md","python-cmdapp/README.md"],
 		["%FILENAME%.py","python-cmdapp/app.py"],
 		["mkdir bin"],
-		["bin/%FILENAME%","python-cmdapp/bin/app"]
+		["bin/%FILENAME%","python-cmdapp/bin/app"],
+		[".gitignore","python-cmdapp/.gitignore"]
 	],
 	"arguments":
 	{
