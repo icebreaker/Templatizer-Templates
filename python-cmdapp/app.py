@@ -13,7 +13,7 @@ def main(argv):
 	""" Main """
 	if len(argv) < 2:
 		print('%NAME% v%d.%d.%d' % __version__)
-		print('usage: %s' % os.path.splitext(os.path.basename(argv[0]))[0])
+		print('usage: %s [options]' % os.path.splitext(os.path.basename(argv[0]))[0])
 		print('')
 		print('Options:')
 		print('\t-v, --version\tshows the version number')
