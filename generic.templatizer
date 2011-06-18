@@ -1,0 +1,30 @@
+{ 
+	"name": "generic",
+	"actions":
+	[	
+		["LICENSE","generic/LICENSE-%LICENSE%"],
+		["README.md","generic/README.md"]
+	],
+	"arguments":
+	{
+		"author":
+		{
+			"%AUTHOR%":"v"
+		},
+		"description":
+		{
+			"%DESCRIPTION%":"v",
+			"%DESCRIPTION-README%":"v[0].lower() + v[1:]"
+		},
+		"license":
+		{
+			"%LICENSE%":"v.upper()"
+		},
+		"name":
+		{
+			"%NAME%":"v",
+			"%FILENAME%":"v.lower()"
+		}
+	},
+	"constants": {}
+}
