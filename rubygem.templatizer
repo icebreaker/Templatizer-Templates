@@ -1,0 +1,49 @@
+{ 
+	"name": "rubygem",
+	"actions":
+	[	
+		["LICENSE","rubygem/LICENSE-%LICENSE%"],
+		["README.md","rubygem/README.md"],
+		["mkdir bin"],
+		["bin/%FILENAME%","rubygem/bin/gem"],
+		["chmod a+x bin/%FILENAME%"],
+		["mkdir -p lib/%FILENAME%"],
+		["lib/%FILENAME%.rb", "rubygem/lib/gem.rb"],
+		["lib/%FILENAME%/version.rb", "rubygem/lib/gem/version.rb"],
+		["mkdir test"],
+		["test/test_%FILENAME%.rb", "rubygem/test/test_gem.rb"],
+		["%FILENAME%.gemspec",  "rubygem/gem.gemspec"],
+		["Rakefile", "rubygem/Rakefile"]
+	],
+	"arguments":
+	{
+		"author":
+		{
+			"%AUTHOR%":"v"
+		},
+		"description":
+		{
+			"%DESCRIPTION%":"v",
+			"%DESCRIPTION-README%":"v[0].lower() + v[1:]"
+		},
+		"license":
+		{
+			"%LICENSE%":"v.upper()"
+		},
+		"name":
+		{
+			"%NAME%":"v",
+			"%FILENAME%":"v.lower()",
+			"%CLASSNAME%":"v.capitalize()"
+		},
+		"github":
+		{
+			"%GITHUB%":"v"
+		},
+		"email":
+		{
+			"%EMAIL%":"v"
+		}
+	},
+	"constants": {}
+}
